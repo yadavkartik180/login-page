@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "raleway", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./nature.jpg);
+  background-position: center above;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  z-index:-1;
+}
+body::before {
+  content: "";
+  width: max-content;
+  height: 100vh;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+}
+.container {
+  width: 335px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid #ffffff80;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ -webkit-backdrop-filter: blur(2px);
+}
+input::placeholder {
+  color: #fff;
+  text-align: left;
+  font-size: 15px;
+  padding-left: 10 px;
+  letter-spacing: 2px;
+}
+form {
+  width: 275px;
+  margin: 0 auto;
+}
+form input {
+  margin: 15px 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid #ffffff80;
+  border-radius: 5px;
+  border-right: none;
+  border-bottom: none;
+  text-align: center;
+  color: #fff;
+}
+label{
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+form h1{
+    color: #fff;
+    font-size: 33px;
+}
+form h5{
+    font-size: 15px;
+    margin: 10px 0 20px ;
+    font-weight: 600;
+}
+form h5 span {
+    padding-left: 5px ;
+}
+form button {
+    width: 60%;
+    height: 30px;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid #ffffff80;
+  border-radius: 5px;
+  border-right: none;
+  border-bottom: none;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+
+}
+input:focus{
+    outline: none;
+}
